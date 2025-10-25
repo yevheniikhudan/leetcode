@@ -1,0 +1,31 @@
+# C++
+*.o
+*.exe
+*.out
+*.dSYM/
+*.dSYM/*
+
+# Java
+*.class
+*.jar
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Compiled executables
+*/helloworld
+*/two_sum
+*/three_sum
+**/TwoSum
+**/ThreeSum

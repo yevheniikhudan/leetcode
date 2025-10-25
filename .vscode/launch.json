@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TwoSum",
+            "request": "launch",
+            "mainClass": "TwoSum",
+            "projectName": "leetcode_88e5c865"
+        },
+        {
+            "type": "java",
+            "name": "Solution$TwoSum",
+            "request": "launch",
+            "mainClass": "Solution$TwoSum",
+            "projectName": "leetcode_88e5c865"
+        },
+        {
+            "name": "Java: Debug Current File",
+            "type": "java",
+            "request": "launch",
+            "mainClass": "${fileBasenameNoExtension}",
+            "projectName": "leetcode",
+            "cwd": "${fileDirname}"
+        },
+        {
+            "name": "C/C++: Debug with lldb",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang++ build active file"
+        }
+    ]
+}

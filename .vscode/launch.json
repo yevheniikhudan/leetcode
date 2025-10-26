@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ThreeSumClosest",
+            "request": "launch",
+            "mainClass": "ThreeSumClosest",
+            "projectName": "leetcode_88e5c865"
+        },
+        {
+            "type": "java",
             "name": "ThreeSum",
             "request": "launch",
             "mainClass": "ThreeSum",

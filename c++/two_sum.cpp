@@ -1,22 +1,18 @@
-#include <vector>
 #include <iostream>
 #include <unordered_map>
+#include <vector>
 using namespace std;
 
-class Solution
-{
-public:
-    vector<int> twoSum(vector<int> &nums, int target)
-    {
+class Solution {
+   public:
+    vector<int> twoSum(vector<int>& nums, int target) {
         unordered_map<int, int> seen;
 
-        for (int i = 0; i < nums.size(); i++)
-        {
+        for (int i = 0; i < nums.size(); i++) {
             int num = nums[i];
             int x = target - num;
 
-            if (seen.count(x))
-            {
+            if (seen.count(x)) {
                 return {seen[x], i};
             }
 
@@ -27,8 +23,7 @@ public:
     }
 };
 
-int main()
-{
+int main() {
     Solution s;
 
     vector<int> nums1 = {2, 7, 11, 15};

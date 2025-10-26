@@ -6,7 +6,7 @@ using namespace std;
 class Solution
 {
 public:
-    vector<vector<int>> threeSum(vector<int> &nums)
+    vector<vector<int>> threeSum(vector<int>& nums)
     {
         set<vector<int>> triplets;
 
@@ -25,7 +25,7 @@ public:
                 int target = -(nums[j] + nums[i]);
                 if (seen.count(target))
                 {
-                    triplets.insert({nums[i], target, nums[j]});
+                    triplets.insert({ nums[i], target, nums[j] });
                 }
 
                 seen.insert(nums[j]);
@@ -36,7 +36,7 @@ public:
     }
 };
 
-void printResult(vector<vector<int>> &result)
+void printResult(vector<vector<int>>& result)
 {
     cout << "[";
     for (int i = 0; i < result.size(); i++)
@@ -59,17 +59,17 @@ int main()
 {
     Solution s;
 
-    vector<int> nums1 = {-1, 0, 1, 2, -1, -4};
+    vector<int> nums1 = { -1, 0, 1, 2, -1, -4 };
     vector<vector<int>> result1 = s.threeSum(nums1);
     printResult(result1);
     cout << "Expected: [[-1,-1,2],[-1,0,1]]" << endl;
 
-    vector<int> nums2 = {0, 1, 1};
+    vector<int> nums2 = { 0, 1, 1 };
     vector<vector<int>> result2 = s.threeSum(nums2);
     printResult(result2);
     cout << "Expected: []" << endl;
 
-    vector<int> nums3 = {0, 0, 0};
+    vector<int> nums3 = { 0, 0, 0 };
     vector<vector<int>> result3 = s.threeSum(nums3);
     printResult(result3);
     cout << "Expected: [[0,0,0]]" << endl;

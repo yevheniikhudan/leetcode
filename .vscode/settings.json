@@ -1,6 +1,16 @@
 {
     "files.associations": {
         "vector": "cpp",
-        "unordered_map": "cpp"
-    }
+        "unordered_map": "cpp",
+        "__split_buffer": "cpp",
+        "string": "cpp",
+        "set": "cpp",
+        "__bit_reference": "cpp",
+        "__hash_table": "cpp",
+        "__tree": "cpp",
+        "array": "cpp",
+        "initializer_list": "cpp",
+        "string_view": "cpp"
+    },
+    "java.debug.settings.onBuildFailureProceed": true
 }

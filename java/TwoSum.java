@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.HashMap;
 
-class Solution {
+class TwoSum {
 
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> seen = new HashMap<>();
@@ -18,11 +18,9 @@ class Solution {
 
         return new int[] { -1, -1 };
     }
-}
 
-public class TwoSum {
     public static void main(String[] args) {
-        Solution s = new Solution();
+        TwoSum s = new TwoSum();
 
         int[] nums1 = { 2, 7, 11, 15 };
         int target1 = 9;

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SimpleBankSystem",
+            "request": "launch",
+            "mainClass": "SimpleBankSystem",
+            "projectName": "leetcode_88e5c865"
+        },
+        {
+            "type": "java",
             "name": "ThreeSumClosest",
             "request": "launch",
             "mainClass": "ThreeSumClosest",

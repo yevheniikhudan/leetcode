@@ -6,37 +6,9 @@
     "configurations": [
         {
             "type": "java",
-            "name": "SimpleBankSystem",
+            "name": "NumberOfLaserBeamsInABank",
             "request": "launch",
-            "mainClass": "SimpleBankSystem",
-            "projectName": "leetcode_88e5c865"
-        },
-        {
-            "type": "java",
-            "name": "ThreeSumClosest",
-            "request": "launch",
-            "mainClass": "ThreeSumClosest",
-            "projectName": "leetcode_88e5c865"
-        },
-        {
-            "type": "java",
-            "name": "ThreeSum",
-            "request": "launch",
-            "mainClass": "ThreeSum",
-            "projectName": "leetcode_88e5c865"
-        },
-        {
-            "type": "java",
-            "name": "TwoSum",
-            "request": "launch",
-            "mainClass": "TwoSum",
-            "projectName": "leetcode_88e5c865"
-        },
-        {
-            "type": "java",
-            "name": "Solution$TwoSum",
-            "request": "launch",
-            "mainClass": "Solution$TwoSum",
+            "mainClass": "NumberOfLaserBeamsInABank",
             "projectName": "leetcode_88e5c865"
         },
         {

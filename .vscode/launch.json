@@ -5,13 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "NumberOfLaserBeamsInABank",
-            "request": "launch",
-            "mainClass": "NumberOfLaserBeamsInABank",
-            "projectName": "leetcode_88e5c865"
-        },
-        {
             "name": "Java: Debug Current File",
             "type": "java",
             "request": "launch",

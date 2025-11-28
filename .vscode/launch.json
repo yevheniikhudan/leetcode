@@ -8,9 +8,16 @@
             "name": "Java: Debug Current File",
             "type": "java",
             "request": "launch",
+            "mainClass": "${file}",
+            "cwd": "${workspaceFolder}/java"
+        },
+        {
+            "name": "Java: Run Current File",
+            "type": "java",
+            "request": "launch",
             "mainClass": "${fileBasenameNoExtension}",
-            "projectName": "leetcode",
-            "cwd": "${fileDirname}"
+            "classPaths": ["${workspaceFolder}/java"],
+            "cwd": "${workspaceFolder}/java"
         },
         {
             "name": "C/C++: Debug with lldb",

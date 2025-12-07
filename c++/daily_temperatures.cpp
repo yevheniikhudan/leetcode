@@ -24,8 +24,21 @@ class Solution {
      * Space Complexity: O(n) for the stack
      */
     vector<int> dailyTemperatures(vector<int>& temperatures) {
-        // TODO: Implement using monotonic stack
-        return {};
+        int n = temperatures.size();
+        vector<int> result(n, 0);
+        stack<int> stk;
+
+        for (int i = 0; i < n; i++) {
+            while (!stk.empty() && temperatures[i] > temperatures[stk.top()]) {
+                int stackIndex = stk.top();
+                stk.pop();
+                result[stackIndex] = i - stackIndex;
+            }
+
+            stk.push(i);
+        }
+
+        return result;
     }
 };
 

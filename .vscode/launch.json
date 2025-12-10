@@ -5,19 +5,24 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Java: Debug Current File",
             "type": "java",
-            "request": "launch",
-            "mainClass": "${file}",
-            "cwd": "${workspaceFolder}/java"
-        },
-        {
-            "name": "Java: Run Current File",
-            "type": "java",
+            "name": "Java Debugger",
             "request": "launch",
             "mainClass": "${fileBasenameNoExtension}",
-            "classPaths": ["${workspaceFolder}/java"],
-            "cwd": "${workspaceFolder}/java"
+            "projectName": "",
+            "cwd": "${fileDirname}",
+            "classPaths": [
+                "${fileDirname}"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
         },
         {
             "name": "C/C++: Debug with lldb",

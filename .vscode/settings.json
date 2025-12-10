@@ -48,7 +48,5 @@
         "variant": "cpp",
         "algorithm": "cpp"
     },
-    "java.debug.settings.enableRunDebugCodeLens": false,
-    "java.configuration.updateBuildConfiguration": "disabled",
-    "C_Cpp.formatting": "clangFormat"
+    "C_Cpp.formatting": "clangFormat",
 }

@@ -49,4 +49,9 @@
         "algorithm": "cpp"
     },
     "C_Cpp.formatting": "clangFormat",
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.debug.settings.forceBuildBeforeLaunch": true,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.project.outputPath": "${workspaceFolder}/bin",
+    "java.compile.nullAnalysis.mode": "automatic"
 }

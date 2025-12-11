@@ -41,7 +41,7 @@
             "type": "shell",
             "command": "javac",
             "args": [
-                "${file}"
+                "${fileBasename}"
             ],
             "options": {
                 "cwd": "${fileDirname}"

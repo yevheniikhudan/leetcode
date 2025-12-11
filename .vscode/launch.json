@@ -6,14 +6,26 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Java Debugger",
+            "name": "Run Java (Current File)",
             "request": "launch",
             "mainClass": "${fileBasenameNoExtension}",
-            "projectName": "",
             "cwd": "${fileDirname}",
             "classPaths": [
                 "${fileDirname}"
             ],
+            "preLaunchTask": "Java: Compile Current File",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Debug Java (Current File)",
+            "request": "launch",
+            "mainClass": "${fileBasenameNoExtension}",
+            "cwd": "${fileDirname}",
+            "classPaths": [
+                "${fileDirname}"
+            ],
+            "preLaunchTask": "Java: Compile Current File",
             "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart"
         },

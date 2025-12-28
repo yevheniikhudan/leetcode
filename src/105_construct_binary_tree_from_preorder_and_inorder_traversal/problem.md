@@ -1,0 +1,65 @@
+# 105. Construct Binary Tree from Preorder and Inorder Traversal
+
+**Difficulty:** Medium
+
+## Problem Description
+
+Given two integer arrays `preorder` and `inorder` where `preorder` is the preorder traversal of a binary tree and `inorder` is the inorder traversal of the same tree, construct and return the binary tree.
+
+## Examples
+
+### Example 1:
+```
+Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
+Output: [3,9,20,null,null,15,7]
+Explanation:
+      3
+     / \
+    9  20
+      /  \
+     15   7
+```
+
+### Example 2:
+```
+Input: preorder = [-1], inorder = [-1]
+Output: [-1]
+```
+
+## Constraints
+
+- `1 <= preorder.length <= 3000`
+- `inorder.length == preorder.length`
+- `-3000 <= preorder[i], inorder[i] <= 3000`
+- `preorder` and `inorder` consist of **unique** values
+- Each value of `inorder` also appears in `preorder`
+- `preorder` is **guaranteed** to be the preorder traversal of the tree
+- `inorder` is **guaranteed** to be the inorder traversal of the tree
+
+## Topics
+
+- Array
+- Hash Table
+- Divide and Conquer
+- Tree
+- Binary Tree
+
+## Companies
+
+Facebook, Amazon, Microsoft, Bloomberg, Adobe
+
+## Similar Problems
+
+- Construct Binary Tree from Inorder and Postorder Traversal (Medium)
+
+## Hints
+
+1. Consider what information preorder and inorder traversals give you:
+   - Preorder: root, left subtree, right subtree
+   - Inorder: left subtree, root, right subtree
+
+2. The first element in preorder is always the root
+
+3. Once you know the root, you can find it in inorder to split left and right subtrees
+
+4. Use recursion or iteration with a hashmap for efficient lookups

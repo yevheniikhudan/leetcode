@@ -178,6 +178,15 @@ leetcode/
 - **Approaches:** Recursive DFS, Iterative BFS, Iterative DFS
 - **Key Pattern:** Tree traversal and recursion
 
+### Stone Smashing Problems
+
+#### 13. **1046 - Last Stone Weight** (Easy)
+- **Status:** ✅ Implemented (Python, Java, C++)
+- **Approaches:** Max-Heap (priority queue)
+- **Key Pattern:** Repeatedly combine two largest elements
+- **C++ Note:** Now uses `class Solution` template as per LeetCode standard
+- **Java Note:** Handles empty queue case to avoid `NullPointerException`
+
 ---
 
 ## 🔑 Key Patterns & Templates
@@ -272,6 +281,25 @@ function traverse(node):
 - Focus on different categories (Trees, Graphs, DP, etc.)
 - Practice pattern recognition
 - Optimize solutions after initial implementation
+
+---
+
+## 🧪 Test Output Format Update
+
+All test cases in main functions should print results in the following format:
+
+```
+actual | expected
+```
+
+For example:
+```
+1 | 2
+1 | 1
+[1,2,3] | [1,2,3]
+```
+
+This format applies to all languages (Python, Java, C++). Do not update code files automatically—update only when implementing or refactoring test scaffolding.
 
 ---
 

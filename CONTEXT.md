@@ -21,7 +21,7 @@ src/{ProblemNumber}_{problem_title}/
   - Example: `226_invert_binary_tree`
 - **Files:**
   - `problem.md` - Problem description
-  - `{problem_title}_tutorial.md` - Tutorial (NO code implementations)
+  - `tutorial.md` - Tutorial (NO code implementations)
   - `{problem_title}.py` - Python skeleton (snake_case)
   - `{problem_title}.cpp` - C++ skeleton (snake_case)
   - `{ProblemTitle}.java` - Java skeleton (PascalCase)

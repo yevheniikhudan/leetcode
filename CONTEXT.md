@@ -10,7 +10,7 @@ Create the complete setup with the following structure:
 ```
 src/{ProblemNumber}_{problem_title}/
 ├── problem.md
-├── {problem_title}_tutorial.md
+├── tutorial.md
 ├── {problem_title}.py
 ├── {problem_title}.cpp
 └── {ProblemTitle}.java
@@ -58,6 +58,7 @@ src/{ProblemNumber}_{problem_title}/
    - Helper methods for testing
    - Test scaffolding with 5+ test cases
    - All tests ready to run
+   - Class named Solution
 
 5. **{problem_title}.cpp** (C++ Skeleton)
    - Class and method signatures ONLY
@@ -253,6 +254,13 @@ function traverse(node):
 - Use `null` for unimplemented returns
 - `PriorityQueue` is min-heap by default
 - No manual memory management (GC handles it)
+- **Java Solution Structure Convention**
+  - Each LeetCode Java solution should use:
+    - `Solution` class for the main algorithm/logic (e.g., `public ListNode middleNode(ListNode head)`)
+    - A separate class (e.g., `MiddleOfTheLinkedList`) for `main` and test helpers
+    - `ListNode` (or similar) as its own class (not public)
+  - This structure matches LeetCode conventions and keeps logic/test separation clear.
+  - All new Java solutions should follow this pattern.
 
 ### C++
 - Use `nullptr` (not `NULL` or `0`)

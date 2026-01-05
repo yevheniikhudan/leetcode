@@ -58,7 +58,8 @@ src/{ProblemNumber}_{problem_title}/
    - Helper methods for testing
    - Test scaffolding with 5+ test cases
    - All tests ready to run
-   - Class named Solution
+   - Class named Solution with method signatures (no implementation)
+   - Separate class named {ProblemTitle} for main and test helpers
 
 5. **{problem_title}.cpp** (C++ Skeleton)
    - Class and method signatures ONLY

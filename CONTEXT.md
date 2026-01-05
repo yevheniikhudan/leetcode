@@ -36,7 +36,7 @@ src/{ProblemNumber}_{problem_title}/
    - Constraints
    - Related problems (if any)
 
-2. **{problem_title}_tutorial.md**
+2. **tutorial.md**
    - Understanding the problem (conceptual explanation)
    - Visual examples and diagrams
    - Multiple approaches (explain strategies, NO code)

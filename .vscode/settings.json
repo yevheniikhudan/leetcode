@@ -54,5 +54,7 @@
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.project.outputPath": "${workspaceFolder}/bin",
     "java.compile.nullAnalysis.mode": "automatic",
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "aiAssistant.contextFile": "CONTEXT.md",
+    "aiAssistant.enforceContext": true
 }

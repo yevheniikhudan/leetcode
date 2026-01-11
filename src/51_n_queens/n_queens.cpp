@@ -1,10 +1,10 @@
-#include <vector>
-#include <string>
 #include <iostream>
+#include <string>
+#include <vector>
 using namespace std;
 
 class Solution {
-public:
+   public:
     vector<vector<string>> solveNQueens(int n) {
         vector<vector<string>> res;
         vector<string> board(n, string(n, '.'));
@@ -12,9 +12,10 @@ public:
         backtrack(0, n, board, res, cols, diag1, diag2);
         return res;
     }
-private:
+
+   private:
     void backtrack(int row, int n, vector<string>& board, vector<vector<string>>& res,
-                  vector<bool>& cols, vector<bool>& diag1, vector<bool>& diag2) {
+                   vector<bool>& cols, vector<bool>& diag1, vector<bool>& diag2) {
         if (row == n) {
             res.push_back(board);
             return;

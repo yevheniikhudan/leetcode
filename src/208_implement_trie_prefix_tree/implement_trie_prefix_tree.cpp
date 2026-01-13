@@ -8,9 +8,9 @@
 using namespace std;
 
 class Trie {
-public:
+   public:
     Trie() : is_end(false) {}
-    
+
     void insert(string word) {
         Trie* node = this;
         for (char c : word) {
@@ -21,7 +21,7 @@ public:
         }
         node->is_end = true;
     }
-    
+
     bool search(string word) {
         Trie* node = this;
         for (char c : word) {
@@ -32,7 +32,7 @@ public:
         }
         return node->is_end;
     }
-    
+
     bool startsWith(string prefix) {
         Trie* node = this;
         for (char c : prefix) {
@@ -43,19 +43,21 @@ public:
         }
         return true;
     }
-    
+
     ~Trie() {
         for (auto& p : children) {
             delete p.second;
         }
     }
-private:
+
+   private:
     unordered_map<char, Trie*> children;
     bool is_end;
 };
 
 // Test scaffolding
-void test(const string& test_name, Trie& trie, const vector<pair<string, string>>& ops, const vector<string>& args, const vector<string>& expected) {
+void test(const string& test_name, Trie& trie, const vector<pair<string, string>>& ops,
+          const vector<string>& args, const vector<string>& expected) {
     cout << test_name << ":\n";
     for (size_t i = 0; i < ops.size(); ++i) {
         string op = ops[i].first;
@@ -65,10 +67,12 @@ void test(const string& test_name, Trie& trie, const vector<pair<string, string>
             cout << "insert(" << arg << ") | expected: null" << endl;
         } else if (op == "search") {
             bool res = trie.search(arg);
-            cout << "search(" << arg << ") = " << (res ? "true" : "false") << " | expected: " << expected[i] << endl;
+            cout << "search(" << arg << ") = " << (res ? "true" : "false")
+                 << " | expected: " << expected[i] << endl;
         } else if (op == "startsWith") {
             bool res = trie.startsWith(arg);
-            cout << "startsWith(" << arg << ") = " << (res ? "true" : "false") << " | expected: " << expected[i] << endl;
+            cout << "startsWith(" << arg << ") = " << (res ? "true" : "false")
+                 << " | expected: " << expected[i] << endl;
         }
     }
     cout << endl;
@@ -76,7 +80,9 @@ void test(const string& test_name, Trie& trie, const vector<pair<string, string>
 
 int main() {
     Trie trie;
-    vector<pair<string, string>> ops = {{"insert", "apple"}, {"search", "apple"}, {"search", "app"}, {"startsWith", "app"}, {"insert", "app"}, {"search", "app"}};
+    vector<pair<string, string>> ops = {{"insert", "apple"}, {"search", "apple"},
+                                        {"search", "app"},   {"startsWith", "app"},
+                                        {"insert", "app"},   {"search", "app"}};
     vector<string> args = {"apple", "apple", "app", "app", "app", "app"};
     vector<string> expected = {"null", "true", "false", "true", "null", "true"};
     test("Test1", trie, ops, args, expected);

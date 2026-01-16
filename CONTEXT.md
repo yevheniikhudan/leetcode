@@ -39,7 +39,7 @@ src/{ProblemNumber}_{problem_title}/
 2. **tutorial.md**
    - Understanding the problem (conceptual explanation)
    - Visual examples and diagrams
-   - Multiple approaches (explain strategies, NO code)
+   - Multiple approaches (explain strategies, NO code), started from the most efficient
    - Time/Space complexity analysis
    - Key concepts and patterns
    - Edge cases and common pitfalls

@@ -6,7 +6,8 @@ public class BackspaceStringCompare {
             indexT = nextValidChar(t, indexT);
             char charS = indexS >= 0 ? s.charAt(indexS) : 0;
             char charT = indexT >= 0 ? t.charAt(indexT) : 0;
-            if (charS != charT) return false;
+            if (charS != charT)
+                return false;
             indexS--;
             indexT--;
         }

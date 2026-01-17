@@ -3,7 +3,7 @@
 using namespace std;
 
 class Solution {
-public:
+   public:
     bool backspaceCompare(string s, string t) {
         int indexS = s.size() - 1, indexT = t.size() - 1;
         while (indexS >= 0 || indexT >= 0) {

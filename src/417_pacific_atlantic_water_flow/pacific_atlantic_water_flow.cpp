@@ -1,6 +1,6 @@
 #include <iostream>
-#include <vector>
 #include <queue>
+#include <vector>
 using namespace std;
 
 class Solution {
@@ -20,8 +20,8 @@ class Solution {
                 vis[r][c] = true;
                 for (auto& d : dirs) {
                     int nr = r + d.first, nc = c + d.second;
-                    if (nr >= 0 && nr < ROWS && nc >= 0 && nc < COLS &&
-                        !vis[nr][nc] && heights[nr][nc] >= heights[r][c]) {
+                    if (nr >= 0 && nr < ROWS && nc >= 0 && nc < COLS && !vis[nr][nc] &&
+                        heights[nr][nc] >= heights[r][c]) {
                         q.push({nr, nc});
                     }
                 }

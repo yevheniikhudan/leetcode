@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
    public:
-    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
         vector<vector<int>> adjList(numCourses);
         vector<int> inEdges(numCourses, 0);
         for (const auto& pair : prerequisites) {
@@ -17,33 +17,48 @@ class Solution {
         for (int i = 0; i < numCourses; ++i) {
             if (inEdges[i] == 0) q.push(i);
         }
-        int coursesFinished = 0;
+        vector<int> order;
         while (!q.empty()) {
             int course = q.front();
             q.pop();
-            coursesFinished++;
+            order.push_back(course);
             for (int adj : adjList[course]) {
                 if (inEdges[adj] > 0) inEdges[adj]--;
                 if (inEdges[adj] == 0) q.push(adj);
             }
         }
-        return coursesFinished == numCourses;
+        if (order.size() == numCourses) return order;
+        return {};
     }
 };
 
 // Test scaffolding
+void printVec(const vector<int>& v) {
+    cout << "[";
+    for (size_t i = 0; i < v.size(); ++i) {
+        cout << v[i];
+        if (i + 1 < v.size()) cout << ", ";
+    }
+    cout << "]";
+}
+
 void test() {
     Solution sol;
     vector<vector<int>> p1 = {{1, 0}};
-    cout << boolalpha << sol.canFinish(2, p1) << " | true" << endl;
+    printVec(sol.findOrder(2, p1));
+    cout << " | [0, 1]" << endl;
     vector<vector<int>> p2 = {{1, 0}, {0, 1}};
-    cout << boolalpha << sol.canFinish(2, p2) << " | false" << endl;
+    printVec(sol.findOrder(2, p2));
+    cout << " | []" << endl;
     vector<vector<int>> p3 = {};
-    cout << boolalpha << sol.canFinish(1, p3) << " | true" << endl;
-    vector<vector<int>> p4 = {{1, 0}, {2, 1}};
-    cout << boolalpha << sol.canFinish(3, p4) << " | true" << endl;
+    printVec(sol.findOrder(1, p3));
+    cout << " | [0]" << endl;
+    vector<vector<int>> p4 = {{1, 0}, {2, 0}, {3, 1}, {3, 2}};
+    printVec(sol.findOrder(4, p4));
+    cout << " | [0,2,1,3] or [0,1,2,3]" << endl;
     vector<vector<int>> p5 = {{1, 0}, {0, 2}, {2, 1}};
-    cout << boolalpha << sol.canFinish(3, p5) << " | false" << endl;
+    printVec(sol.findOrder(3, p5));
+    cout << " | []" << endl;
 }
 
 int main() {

@@ -67,11 +67,15 @@ src/{ProblemNumber}_{problem_title}/
    - All tests ready to run
 
 ### Important Notes:
+- Do not summarize the finished work, if not asked
 - ✅ Create ONLY these 5 files per problem
 - ✅ Tutorial must be CODE-FREE (concepts and strategies only)
 - ✅ Skeleton files contain ONLY signatures and test scaffolding
 - ✅ NO implementations in skeleton files
-- ❌ Do NOT create Excalidraw files (we will extend this later)
+- ❌ Do NOT create Excalidraw files
+- If asked for Excalidraw, draw data structures from the problem examples
+- If asked for review, do not edit any files, just paste response to the chat
+- If asked to convert to other languages, convert my solution and approach, not what you seen anywhere. You only need to convert Solution class
 
 ---
 

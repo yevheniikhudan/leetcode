@@ -75,7 +75,7 @@ src/{ProblemNumber}_{problem_title}/
 - ❌ Do NOT create Excalidraw files
 - If asked for Excalidraw, draw data structures from the problem examples
 - If asked for review, do not edit any files, just paste response to the chat
-- If asked to convert to other languages, convert my solution and approach, not what you seen anywhere. You only need to convert Solution class
+- If asked to convert to other languages, convert my solution and approach, not what you seen anywhere. Your only output is Solution class
 
 ---
 

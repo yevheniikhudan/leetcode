@@ -6,7 +6,7 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Run Java (Current File)",
+            "name": "Java Debugger: Current File",
             "request": "launch",
             "mainClass": "${fileBasenameNoExtension}",
             "cwd": "${fileDirname}",
@@ -15,19 +15,6 @@
             ],
             "preLaunchTask": "Java: Compile Current File",
             "console": "integratedTerminal"
-        },
-        {
-            "type": "java",
-            "name": "Debug Java (Current File)",
-            "request": "launch",
-            "mainClass": "${fileBasenameNoExtension}",
-            "cwd": "${fileDirname}",
-            "classPaths": [
-                "${fileDirname}"
-            ],
-            "preLaunchTask": "Java: Compile Current File",
-            "console": "internalConsole",
-            "internalConsoleOptions": "openOnSessionStart"
         },
         {
             "name": "Python Debugger: Current File",

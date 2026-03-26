@@ -109,7 +109,8 @@ leetcode/
 All test cases in main functions should print results in the following format:
 
 ```
-actual | expected
+actual | expected | PASS (if actual == expected)
+actual | expected | FAIL (if actual != expected)
 ```
 
 For example:

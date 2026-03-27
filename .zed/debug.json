@@ -1,0 +1,44 @@
+[
+  {
+    "label": "C++: Debug Current File",
+    "build": {
+      "command": "clang++",
+      "args": [
+        "-std=c++17",
+        "-g",
+        "-O0",
+        "$ZED_FILE",
+        "-o",
+        "$ZED_DIRNAME/$ZED_STEM",
+      ],
+      "cwd": "$ZED_DIRNAME",
+    },
+    "program": "$ZED_DIRNAME/$ZED_STEM",
+    "request": "launch",
+    "adapter": "CodeLLDB",
+    "cwd": "$ZED_DIRNAME",
+    "initCommands": ["settings set target.language c++"],
+  },
+  {
+    "label": "Java: Debug Current File",
+    "build": {
+      "command": "javac",
+      "args": ["-g", "$ZED_FILE"],
+      "cwd": "$ZED_DIRNAME",
+    },
+    "request": "launch",
+    "adapter": "Java",
+    "mainClass": "$ZED_STEM",
+    "classPaths": ["$ZED_DIRNAME"],
+    "cwd": "$ZED_DIRNAME",
+  },
+  {
+    "label": "Python: Debug Current File",
+    "program": "$ZED_FILE",
+    "request": "launch",
+    "adapter": "debugpy",
+    "cwd": "$ZED_DIRNAME",
+    "console": "integratedTerminal",
+    "args": [],
+  },
+]

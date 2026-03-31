@@ -29,6 +29,7 @@
     "request": "launch",
     "adapter": "Java",
     "mainClass": "$ZED_STEM",
+    "projectName": "$ZED_STEM",
     "classPaths": ["$ZED_DIRNAME"],
     "cwd": "$ZED_DIRNAME",
   },

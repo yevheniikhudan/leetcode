@@ -35,11 +35,9 @@
   },
   {
     "label": "Python: Debug Current File",
+    "adapter": "Debugpy",
     "program": "$ZED_FILE",
     "request": "launch",
-    "adapter": "debugpy",
     "cwd": "$ZED_DIRNAME",
-    "console": "integratedTerminal",
-    "args": [],
   },
 ]

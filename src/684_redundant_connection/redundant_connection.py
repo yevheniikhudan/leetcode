@@ -25,7 +25,7 @@ class DSU:
             self.parent[parent2] = parent1
         else:
             self.parent[parent1] = parent2
-            self.rank[parent1] += 1
+            self.rank[parent2] += 1
 
         return True
 

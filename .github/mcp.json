@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "node",
+      "args": ["-e", "require('@modelcontextprotocol/server-filesystem').main()"],
+      "env": {
+        "MCP_ALLOWED_PATHS": "/Users/yevhenii.khudan/projects/leetcode/src"
+      }
+    },
+    "bash": {
+      "command": "bash",
+      "args": ["-c", "npx @modelcontextprotocol/server-bash --allow-all"],
+      "disabled": false
+    }
+  }
+}

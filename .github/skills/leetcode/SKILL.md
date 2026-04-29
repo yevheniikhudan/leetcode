@@ -1,12 +1,14 @@
 ---
 name: leetcode
-description: Creates leetcode problem setup. Use when leetcode link is provided
+description: Creates a comfortable LeetCode problem setup for solving and storing problems. Use when a LeetCode link, problem number, or problem title is provided. Do not solve the problem unless the user explicitly asks for an implementation or solution.
 allowed-tools: shell
 ---
 
 ## Quick Start for New Problems
 
-When given a LeetCode link or problem, do not ask for confirmation. Parse the link and create the complete setup automatically.
+When given a LeetCode link, problem number, or problem title, do not ask for confirmation. Parse or look up the problem metadata and create the complete setup automatically.
+
+**Default behavior is setup-only.** Prepare the problem directory, prompt notes, tutorial guidance, runnable files, and test scaffolding for future solving. Do not implement the algorithm or fill in the final solution unless the user directly asks to solve, implement, complete, or provide the answer.
 
 ### Directory Structure
 ```
@@ -51,14 +53,14 @@ All three language files should follow the same structure:
 
 #### Python (`{problem_title}.py`)
 - Class `Solution` with method signature only
-- Method body returns `pass` (no implementation)
+- Method body uses `pass` or an appropriate placeholder return
 - Test cases at the bottom with 5+ test examples
 - Tests compare output and print results
 - Ready to run with `python {problem_title}.py`
 
 #### C++ (`{problem_title}.cpp`)
 - Class `Solution` with method signature only
-- Method body returns `nullptr` or appropriate default
+- Method body returns an appropriate placeholder/default value
 - Helper functions for testing (with memory cleanup)
 - Test cases in `main()` with 5+ test examples
 - Compile with: `g++ -o {problem_title} {problem_title}.cpp`
@@ -66,7 +68,7 @@ All three language files should follow the same structure:
 
 #### Java (`{ProblemTitle}.java`)
 - Class `Solution` with method signature only
-- Method body returns `null` or appropriate default
+- Method body returns an appropriate placeholder/default value
 - Separate class `{ProblemTitle}` with `main()` method
 - Helper methods for testing
 - Test cases in `main()` with 5+ test examples
@@ -121,12 +123,15 @@ The focus is on learning the problem-solving approach first (via tutorials) befo
 
 ## Key Conventions
 
-1. **No implementations in skeletons:** Skeleton files contain ONLY method signatures and test code
-2. **Tutorial is code-free:** Strategies and approaches explained conceptually, no code snippets
-3. **Test scaffolding included:** Each language file has 5+ test cases ready to run
-4. **Language-specific defaults:** Python uses `pass`, C++ uses `nullptr`, Java uses `null`
-5. **Immediate test execution:** All language files can be run directly without additional setup
-6. **Separate test format:** Tests check actual vs expected and print pass/fail status
+1. **Setup first:** The skill creates a comfortable workspace for solving and storing the problem, not the final answer
+2. **No implementations unless requested:** Skeleton files contain method signatures, placeholder returns, and test code only
+3. **Tutorial is code-free:** Strategies and approaches explained conceptually, no code snippets
+4. **Test scaffolding included:** Each language file has 5+ test cases ready to run
+5. **Language-specific placeholders:** Use `pass`, `None`, `nullptr`, `false`, `0`, empty containers, or other appropriate defaults
+6. **Immediate test execution:** All language files can be run directly without additional setup
+7. **Separate test format:** Tests check actual vs expected and print pass/fail status
+
+If the user explicitly asks to solve or implement the problem, then replace placeholders with working solutions and update tests as needed.
 
 ## Code Style
 

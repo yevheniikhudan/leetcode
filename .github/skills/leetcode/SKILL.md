@@ -69,7 +69,7 @@ All three language files should follow the same structure:
 #### Java (`{ProblemTitle}.java`)
 - Class `Solution` with method signature only
 - Method body returns an appropriate placeholder/default value
-- Separate class `{ProblemTitle}` with `main()` method
+- Separate public class `{ProblemTitle}` with `main()` method for testing
 - Helper methods for testing
 - Test cases in `main()` with 5+ test examples
 - Compile with: `javac {ProblemTitle}.java`
@@ -130,6 +130,7 @@ The focus is on learning the problem-solving approach first (via tutorials) befo
 5. **Language-specific placeholders:** Use `pass`, `None`, `nullptr`, `false`, `0`, empty containers, or other appropriate defaults
 6. **Immediate test execution:** All language files can be run directly without additional setup
 7. **Separate test format:** Tests check actual vs expected and print pass/fail status
+8. **Java class split:** Keep the LeetCode method in a separate non-public `Solution` class and put local test execution in public class `{ProblemTitle}`
 
 If the user explicitly asks to solve or implement the problem, then replace placeholders with working solutions and update tests as needed.
 

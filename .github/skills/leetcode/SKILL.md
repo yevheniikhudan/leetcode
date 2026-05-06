@@ -41,7 +41,8 @@ src/{ProblemNumber}_{problem_title}/
 ### `{problem_title}_tutorial.md`
 - Understanding the problem (conceptual explanation)
 - Visual examples and diagrams
-- Multiple approaches (explain strategies WITHOUT code)
+- Multiple approaches when they exist, with the most optimal approach listed first
+- Explain strategies WITHOUT code unless the user explicitly asks for a solution
 - Time/Space complexity analysis
 - Key concepts and patterns
 - Edge cases and common pitfalls
@@ -126,11 +127,12 @@ The focus is on learning the problem-solving approach first (via tutorials) befo
 1. **Setup first:** The skill creates a comfortable workspace for solving and storing the problem, not the final answer
 2. **No implementations unless requested:** Skeleton files contain method signatures, placeholder returns, and test code only
 3. **Tutorial is code-free:** Strategies and approaches explained conceptually, no code snippets
-4. **Test scaffolding included:** Each language file has 5+ test cases ready to run
-5. **Language-specific placeholders:** Use `pass`, `None`, `nullptr`, `false`, `0`, empty containers, or other appropriate defaults
-6. **Immediate test execution:** All language files can be run directly without additional setup
-7. **Separate test format:** Tests check actual vs expected and print pass/fail status
-8. **Java class split:** Keep the LeetCode method in a separate non-public `Solution` class and put local test execution in public class `{ProblemTitle}`
+4. **Optimal approach first:** In tutorials, present the best known approach first, then mention simpler or alternative approaches if useful
+5. **Test scaffolding included:** Each language file has 5+ test cases ready to run
+6. **Language-specific placeholders:** Use `pass`, `None`, `nullptr`, `false`, `0`, empty containers, or other appropriate defaults
+7. **Immediate test execution:** All language files can be run directly without additional setup
+8. **Separate test format:** Tests check actual vs expected and print pass/fail status
+9. **Java class split:** Keep the LeetCode method in a separate non-public `Solution` class and put local test execution in public class `{ProblemTitle}`
 
 If the user explicitly asks to solve or implement the problem, then replace placeholders with working solutions and update tests as needed.
 
